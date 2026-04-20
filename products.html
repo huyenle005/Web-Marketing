@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SẢN PHẨM</title>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+</head>
+<script src="./products-javascript.js"></script>
+   
+<!--PHẦN MENU BAR-->
+<header class="homepage-header" id="homepage_header">
+  <div class="homepage-top-bar">
+    <!-- Logo section - để trống cho SVG -->
+    <a href="index.html" class="homepage-logo-section">
+      <div class="homepage-logo-container">
+        <img src="./Assets/images/logoo.svg" alt="Logo" class="homepage-logo-img">
+      </div>
+    
+    </a>
+
+    <!-- Search box -->
+    <div class="homepage-search-box" id="searchBox">
+      <input type="text" placeholder="Tìm kiếm...">
+      <div class="homepage-search-icon">
+       <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+        <svg width="30px" height="30px" viewBox="0 -1 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.581 72 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#2D5BBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+
+        </svg>
+      </div>
+    </div>
+
+    <!-- Hotline + Icons -->
+    <div class="homepage-right-section">
+      <div class="homepage-hotline">
+        <a href="tel:0912345678">
+          <span>Hotline</span><br>
+          <span>0912345678</span>
+        </a>
+      </div>
+      <div class="homepage-icons">
+        <a href="Cart.html" class="homepage-icon-link">
+          <div class="homepage-icon"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+              <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" transform="rotate(0)">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <g id="SVGRepo_iconCarrier"> <path d="M2 3L2.26491 3.0883C3.58495 3.52832 4.24497 3.74832 4.62248 4.2721C5 4.79587 5 5.49159 5 6.88304V9.5C5 12.3284 5 13.7426 5.87868 14.6213C6.75736 15.5 8.17157 15.5 11 15.5H19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" stroke="#ffffff" stroke-width="1.5"/> <path d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z" stroke="#ffffff" stroke-width="1.5"/> <path d="M5 6H16.4504C18.5054 6 19.5328 6 19.9775 6.67426C20.4221 7.34853 20.0173 8.29294 19.2078 10.1818L18.7792 11.1818C18.4013 12.0636 18.2123 12.5045 17.8366 12.7523C17.4609 13 16.9812 13 16.0218 13H5" stroke="#ffffff" stroke-width="1.5"/> </g>
+
+              </svg></div>
+          Giỏ hàng
+        </a>
+        <a href="Signup.html" class="homepage-icon-link">
+          <div class="homepage-icon">
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+            <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+            
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path d="M18 18.7023C18 15.6706 14.5 15 12 15C9.5 15 6 15.6706 6 18.7023M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            
+            </svg>
+          </div>
+          Tài khoản
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu bar với nút trang chủ -->
+  <nav class="homepage-menu-bar">
+    <a href="homepage.html" class="homepage-paw-icon">
+        <div class="homepage-paw-icon">
+          <img src="./Assets/images/paw-3-svgrepo-com.svg" alt="Logo" class="homepage-paw-icon">
+        </div>
+      
+      </a>
+      <div class="homepage-dropdown">
+      <a href="about-us.html">GIỚI THIỆU</a>
+      </div>
+    <div class="homepage-dropdown">
+      <a href="products.html">SẢN PHẨM</a>
+    </div>
+    
+    <div class="homepage-dropdown">
+    <a href="news.html">PAGAZINE CHĂM BOSS</a></div>
+    
+    
+    <div class="homepage-dropdown">
+      <a href="career.html">TUYỂN DỤNG</a>
+      <div class="homepage-dropdown-content">
+        <a href="./job-detail/job-detail1.html">Vị trí tuyển dụng 1</a>
+        <a href="./job-detail/job-detail2.html">Vị trí tuyển dụng 2</a>
+        <a href="./job-detail/job-detail3.html">Vị trí tuyển dụng 3</a>
+        <a href="./job-detail/job-detail4.html">Vị trí tuyển dụng 4</a>
+      </div>
+    </div>
+    
+
+    <div class="homepage-dropdown"> <a href="Contact.html">LIÊN HỆ</a></div>
+   
+  </nav>
+  </header>
+  
+<body class="products">
+ 
+    <!--PHẦN THỰC PHẨM-->
+<section class="product-section">
+    <h2>THỰC PHẨM</h2>
+    <div class="category-buttons">
+        <div class="category-buttons">
+            <a href="products-food-dog.html" class="category">
+              <img src="./Assets/images/fordog.png" alt="Dành cho chó" />
+            </a>
+          
+            <a href="products-food-cat.html" class="category">
+              <img src="./Assets/images/forcat.png" alt="Dành cho mèo" />
+            </a>
+          </div>          
+        </div>
+    <p class="food-desc">
+        <i>Cung cấp đa dạng thực phẩm dinh dưỡng cho thú cưng, từ hạt khô, pate đến đồ ăn tươi, giúp cún, mèo luôn khỏe mạnh và tràn đầy năng lượng.</i>
+    </p>
+</section>
+
+
+    <!--QUẦN ÁO, PHỤ KIỆN -->
+    <section class="product-section">
+        <h2>QUẦN ÁO, PHỤ KIỆN</h2>
+            <div class="product-grid">
+              <!-- Sản phẩm 1 -->
+              <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion1.html">
+                  <img src="./Assets/images/fashion1.webp" alt="Quần áo cho chó mèo">
+                  <div class="product-title">Quần áo cho chó mèo</div>
+                </a>
+                <div class="product-price">245.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Quần áo cho chó mèo', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+              <!-- Sản phẩm 2-->
+              <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion2.html">
+                  <img src="./Assets/images/fashion2.jpeg" alt="Rọ mõm chó hình mỏ vịt">
+                  <div class="product-title">Rọ mõm chó hình mỏ vịt</div>
+                </a>
+                <div class="product-price">75.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Rọ mõm chó hình mỏ vịt', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 3 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion3.html">
+                  <img src="./Assets/images/fashion3.jpeg" alt="Bảng tên cho chó mèo">
+                  <div class="product-title">Bảng tên cho chó mèo</div>
+                </a>
+                <div class="product-price">75.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Bảng tên cho chó mèo', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 4 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion4.html">
+                  <img src="./Assets/images/fashion4.webp" alt="Yếm kèm dây dắt">
+                  <div class="product-title">Yếm kèm dây dắt</div>
+                </a>
+                <div class="product-price">255.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Yếm kèm dây dắt', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 5 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion5.html">
+                  <img src="./Assets/images/fashion5.webp" alt="Vòng cổ chó mèo hình hoa">
+                  <div class="product-title">Vòng cổ chó mèo hình hoa</div>
+                </a>
+                <div class="product-price">50.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Vòng cổ chó mèo hình hoa', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 6 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion6.html">
+                  <img src="./Assets/images/fashion6.webp" alt="Dây dắt đi dạo tự cuộn">
+                  <div class="product-title">Dây dắt đi dạo tự cuộn</div>
+                </a>
+                <div class="product-price">415.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Dây dắt đi dạo tự cuộn', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 7 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion7.html">
+                  <img src="./Assets/images/fashion7.webp" alt="Mũ cho chó mèo">
+                  <div class="product-title">Mũ cho chó mèo</div>
+                </a>
+                <div class="product-price">155.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                    <button class="btn", onclick="addToCart('Mũ cho chó mèo', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+            <!-- Sản phẩm 8 -->
+            <div class="product">
+                <a href="./Products_detail/fashion/product-detail-fashion8.html">
+                  <img src="./Assets/images/fashion8.webp" alt="Quần áo cho chó mèo">
+                  <div class="product-title">Quần áo cho chó mèo</div>
+                </a>
+                <div class="product-price">245.000đ</div>
+                <div class="btn-group"> <!-- Các buttons thao tác -->
+                  <button class="btn", onclick="addToCart('Quần áo cho chó mèo', this )">THÊM VÀO GIỎ</button>
+                </div>
+              </div>
+      </section>
+
+
+    <!--ĐỒ CHƠI-->
+      <section class="product-section">
+        <h2>ĐỒ CHƠI</h2>
+        <div class="product-grid">
+          <!-- Sản phẩm 1 -->
+          <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy1.html">
+              <img src="./Assets/images/toy1.webp" alt="trụ cào">
+              <div class="product-title">Trụ cào móng kèm đồ chơi</div>
+            </a>
+            <div class="product-price">400.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Trụ cào móng kèm đồ chơi', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+          <!-- Sản phẩm 2 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy2.html">
+                <img src="./Assets/images/toy2.webp" alt="đồ chơi cao su">
+                <div class="product-title">Đồ chơi kêu chút chít bằng cao su</div>
+              </a>
+              <div class="product-price">50.000đ</div>
+              <div class="btn-group"> <!-- Các buttons thao tác -->
+                <button class="btn", onclick="addToCart('Đồ chơi kêu chút chít bằng cao su', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 3 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy3.html">
+              <img src="./Assets/images/toy3.webp" alt="đồ chơi bằng bông">
+              <div class="product-title">Đồ chơi kêu chút chít bằng bông</div>
+            </a>
+            <div class="product-price">190.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Đồ chơi kêu chút chít bằng bông', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 4 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy4.html">
+              <img src="./Assets/images/toy4.webp" alt="đồ chơi đĩa bay">
+              <div class="product-title">Đồ chơi đĩa bay bánh thưởng cho chó mèo</div>
+            </a>
+            <div class="product-price">145.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Đồ chơi đĩa bay bánh thưởng cho chó mèo', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div> 
+        <!-- Sản phẩm 5 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy5.html">
+              <img src="./Assets/images/toy5.jpg" alt="đồ chơi bóng thừng">
+              <div class="product-title">Đồ chơi cho chó mèo dạng bóng thừng</div>
+            </a>
+            <div class="product-price">30.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Đồ chơi cho chó mèo dạng bóng thừng', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 6 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy6.html">
+              <img src="./Assets/images/toy6.webp" alt="bàn cào móng">
+              <div class="product-title">Bàn cào móng cho mèo hình bàn chân</div>
+            </a>
+            <div class="product-price">250.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Bàn cào móng cho mèo hình bàn chân', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 7 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy7.html">
+              <img src="./Assets/images/toy7.jpg" alt="bóng đồ chơi">
+              <div class="product-title">Bóng đồ chơi cho chó mèo có chuông nhựa</div>
+            </a>
+            <div class="product-price">45.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Bóng đồ chơi cho chó mèo có chuông nhựa', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 8 -->
+        <div class="product">
+            <a href="./Products_detail/toys/product-detail-toy8.html">
+              <img src="./Assets/images/toy8.jpg" alt="đồ chơi dây thừng">
+              <div class="product-title">Đồ chơi dây thừng cho chó mèo đan chéo</div>
+            </a>
+            <div class="product-price">55.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('đồ chơi dây thừng', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- VỆ SINH & CHĂM SÓC-->
+      <section class="product-section">
+        <h2>VỆ SINH & CHĂM SÓC</h2>
+        <div class="product-grid">
+          <!-- Sản phẩm 1 -->
+          <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning1.html">
+              <img src="./Assets/images/cleaning1.webp" alt="Khay vệ sinh cho mèo">
+              <div class="product-title">Khay vệ sinh cho mèo </div>
+            </a>
+            <div class="product-price">250.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Khay vệ sinh cho mèo', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+          <!-- Sản phẩm 2 -->
+          <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning2.html">
+              <img src="./Assets/images/cleaning2.webp" alt="Cát vệ sinh hữu cơ cho mèo">
+              <div class="product-title">Cát vệ sinh hữu cơ cho mèo </div>
+            </a>
+            <div class="product-price">155.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Cát vệ sinh hữu cơ cho mèo', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 3 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning3.html">
+              <img src="./Assets/images/cleaning3.webp" alt="Máy mài móng chó mèo">
+              <div class="product-title">Máy mài móng chó mèo </div>
+            </a>
+            <div class="product-price">520.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Máy mài móng chó mèo', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 4 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning4.html">
+              <img src="./Assets/images/cleaning4.webp" alt="Xịt khử mùi chó mèo hương chanh">
+              <div class="product-title">Xịt khử mùi chó mèo hương chanh </div>
+            </a>
+            <div class="product-price">190.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Xịt khử mùi chó mèo hương chanh', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 5 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning5.html">
+              <img src="./Assets/images/cleaning5.webp" alt="Sữa tắm cho chó trị ve rận">
+              <div class="product-title">Sữa tắm cho chó trị ve rận </div>
+            </a>
+            <div class="product-price">150.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('CSữa tắm cho chó trị ve rận', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 6 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning6.html">
+              <img src="./Assets/images/cleaning6.webp" alt="Sữa tắm cho chó mèo hương hoa nhài">
+              <div class="product-title">Sữa tắm chó mèo hương hoa nhài </div>
+            </a>
+            <div class="product-price">250.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Sữa tắm chó mèo hương hoa nhài', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 7 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning7.html">
+              <img src="./Assets/images/cleaning7.webp" alt="Lược chải lông chó mèo">
+              <div class="product-title">Lược chải lông chó mèo </div>
+            </a>
+            <div class="product-price">140.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Lược chải lông chó mèo', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+        <!-- Sản phẩm 8 -->
+        <div class="product">
+            <a href="./Products_detail/cleaning/product-detail-cleaning8.html">
+              <img src="./Assets/images/cleaning8.webp" alt="Túi dọn phân và chất thải chó mèo">
+              <div class="product-title">Túi dọn phân và chất thải </div>
+            </a>
+            <div class="product-price">10.000đ</div>
+            <div class="btn-group"> <!-- Các buttons thao tác -->
+              <button class="btn", onclick="addToCart('Túi dọn phân và chất thải', this )">THÊM VÀO GIỎ</button>
+            </div>
+          </div>
+
+      </section>
+
+ <!-- GIƯỜNG NỆM & CHUỒNG -->
+ <section class="product-section">
+    <h2> GIƯỜNG NỆM & CHUỒNG</h2>
+    <div class="product-grid">
+      <!-- Sản phẩm 1 -->
+      <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage1.html">
+          <img src="./Assets/images/cage1.jpeg" alt="Thảm mát giải nhiệt cho chó mèo">
+          <div class="product-title">Thảm mát giải nhiệt cho chó mèo</div>
+        </a>
+        <div class="product-price">195.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Thảm mát giải nhiệt cho chó mèo', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+      <!-- Sản phẩm 2 -->
+      <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage2.html">
+          <img src="./Assets/images/cage2.jpeg" alt="Nệm cho chó mèo">
+          <div class="product-title">Nệm cho chó mèo</div>
+        </a>
+        <div class="product-price">455.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('TNệm cho chó mèo', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 3 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage3.html">
+          <img src="./Assets/images/cage3.webp" alt="Ổ đệm chó mèo hình lều">
+          <div class="product-title">Ổ đệm chó mèo hình lều</div>
+        </a>
+        <div class="product-price">495.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Ổ đệm chó mèo hình lều', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 4 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage4.html">
+          <img src="./Assets/images/cage4.jpeg" alt="Ổ đệm hình con cá mập">
+          <div class="product-title">Ổ đệm hình con cá mập</div>
+        </a>
+        <div class="product-price">580.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Ổ đệm hình con cá mập', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 5 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage5.html">
+          <img src="./Assets/images/cage5.webp" alt="Nhà cây cho mèo Cat tree 4 tầng">
+          <div class="product-title">Nhà cây cho mèo Cat tree 4 tầng</div>
+        </a>
+        <div class="product-price">2.500.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Nhà cây Cat tree 4 tầng', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 6 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage6.html">
+          <img src="./Assets/images/cage6.webp" alt="Nhà cây cho mèo Cat tree 3 tầng">
+          <div class="product-title">Nhà cây cho mèo Cat tree 3 tầng</div>
+        </a>
+        <div class="product-price">1.800.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Nhà cây cho mèo Cat tree 3 tầng', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 7 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage7.html">
+          <img src="./Assets/images/cage7.webp" alt="Chuồng sắt mạ crôm không gỉ">
+          <div class="product-title">Chuồng sắt mạ crôm không gỉ</div>
+        </a>
+        <div class="product-price">525.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Chuồng sắt mạ crôm cho cho mèo không gỉ', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 8 -->
+    <div class="product">
+        <a href="./Products_detail/cage/product-detail-cage8.html">
+          <img src="./Assets/images/cage8.webp" alt="Quây bằng nhựa lắp ghép">
+          <div class="product-title">Quây bằng nhựa lắp ghép</div>
+        </a>
+        <div class="product-price">2.455.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Quây bằng nhựa lắp ghép', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+
+  </section>
+
+   <!-- DỤNG CỤ ĂN UỐNG -->
+   <section class="product-section">
+    <h2>DỤNG CỤ ĂN UỐNG</h2>
+    <div class="product-grid">
+      <!-- Sản phẩm 1 -->
+      <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl1.html">
+          <img src="./Assets/images/bowl1.jpg" alt="Bình uống nước cho chó mèo gài chuồng">
+          <div class="product-title">Bình uống nước gài chuồng </div>
+        </a>
+        <div class="product-price">80.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bình uống nước cho chó mèo gài chuồng', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+      <!-- Sản phẩm 2 -->
+      <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl2.html">
+          <img src="./Assets/images/bowl2.jpg" alt="Bắt ăn đơn cho chó mèo bằng nhựa gài chuồng">
+          <div class="product-title">Bắt ăn đơn cho chó mèo bằng nhựa gài chuồng </div>
+        </a>
+        <div class="product-price">80.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bắt ăn đơn cho chó mèo bằng nhựa gài chuồng', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 3 -->
+    <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl3.html">
+          <img src="./Assets/images/bowl3.webp" alt="Bát ăn cho chó mèo bằng cao su">
+          <div class="product-title">Bát ăn cho chó mèo bằng cao su</div>
+        </a>
+        <div class="product-price">60.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bát ăn cho chó mèo bằng cao su', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 4 -->
+    <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl4.html">
+          <img src="./Assets/images/bowl4.webp" alt="Bát ăn chó mèo tráng men inox">
+          <div class="product-title">Bát ăn chó mèo tráng men inox</div>
+        </a>
+        <div class="product-price">60.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bát ăn chó mèo tráng men inox', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+     <!-- Sản phẩm 5 -->
+     <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl5.html">
+          <img src="./Assets/images/bowl5.webp" alt="Bát ăn cho chó mèo bằng nhựa">
+          <div class="product-title">Bát ăn cho chó mèo bằng nhựa</div>
+        </a>
+        <div class="product-price">95.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bát ăn cho chó mèo bằng nhựa', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 6 -->
+    <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl6.html">
+          <img src="./Assets/images/bowl6.webp" alt="Dụng cụ ăn uống tự động">
+          <div class="product-title">Dụng cụ ăn uống tự động</div>
+        </a>
+        <div class="product-price">430.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Dụng cụ ăn uống tự động', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 7 -->
+    <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl7.html">
+          <img src="./Assets/images/bowl7.webp" alt="Bộ bắt ăn uống cho chó mèo">
+          <div class="product-title">Bộ bắt ăn uống cho chó mèo</div>
+        </a>
+        <div class="product-price">215.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bộ bắt ăn uống cho chó mèo', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+    <!-- Sản phẩm 8 -->
+    <div class="product">
+        <a href="./Products_detail/ bowl/product-detail-bowl8.html">
+          <img src="./Assets/images/bowl8.webp" alt="'Bộ bát ăn uống chó mèo 3 trong 1">
+          <div class="product-title">Bộ bát ăn uống chó mèo 3 trong 1</div>
+        </a>
+        <div class="product-price">215.000đ</div>
+        <div class="btn-group"> <!-- Các buttons thao tác -->
+          <button class="btn", onclick="addToCart('Bộ bát ăn uống chó mèo 3 trong 1', this )">THÊM VÀO GIỎ</button>
+        </div>
+      </div>
+
+  </section>
+  <footer class="homepage_footer">
+    <div class="homepage_footer-newsletter">
+        <h2 class="homepage_footer-title" id="homepage_login">THÀNH VIÊN PAWFECT</h2>
+        <p class="homepage_footer-description">
+            Đăng ký thành viên ngay hôm nay để nhận email về sản phẩm mới và<br>
+            chương trình khuyến mãi của PAWFECT
+        </p>
+        <div class="homepage_footer-form">
+            <input type="email" placeholder="Email" class="homepage_footer-input">
+            <button class="homepage_footer-button">ĐĂNG KÍ</button>
+        </div>
+    </div>
+    
+    <!-- Thêm div bao bọc các cột footer -->
+    <div class="homepage_footer-links">
+        <div class="homepage_footer-column">
+            <h3>PAWFECT</h3>
+            <ul>
+                <li><a href="about-us.html">Giới thiệu</a></li>
+                <li><a href="career.html">Tuyển dụng</a></li>
+                <li><a href="FAQ.html">Câu hỏi thường gặp</a></li>
+            </ul>
+        </div>
+        <div class="homepage_footer-column">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="Contact.html">Liên hệ CSKH</a></li>
+            </ul>
+        </div>
+        <div class="homepage_footer-column">
+            <h3>Liên hệ</h3>
+            <ul>
+                <li><a href="https://m.me/your_page_username" target="_blank">Messenger</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

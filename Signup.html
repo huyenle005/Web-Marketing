@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Nhập / Đăng Ký</title>
+  <link rel="stylesheet" href="./Assets/css/style.css">
+  <link rel="stylesheet" href="./Assets/css/responsive.css">
+
+</head>
+<body class="signup">
+  <div class="signup-container">
+    <div class="form-box animate__animated animate__fadeIn">
+      <div class="signup-logo"> <img src="./Assets/images/logoo.svg" alt="Logo"></div>
+      <div class="signup-tabs">
+        <button class="tab active" data-tab="login">ĐĂNG NHẬP</button>
+        <button class="tab" data-tab="register">ĐĂNG KÝ</button>
+      </div>
+
+      <div class="form login-form">
+        <a href="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email profile&response_type=code" class="social google">
+          <span class="icon"><i class="fab fa-google"></i></span>
+          <span>ĐĂNG NHẬP BẰNG GOOGLE</span>
+        </a>
+        <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email" class="social facebook">
+          <span class="icon"><i class="fab fa-facebook-f"></i></span>
+          <span>ĐĂNG NHẬP BẰNG FACEBOOK</span>
+        </a>
+        <div class="signup-divider">
+          <span>hoặc</span>
+        </div>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mật khẩu" required />
+        <p class="captcha-note">
+          This site is protected by reCAPTCHA and the Google <br />
+          Privacy Policy and Terms of Service apply.
+        </p>
+        <button class="signup-submit yellow" onclick="submitLogin()">ĐĂNG NHẬP</button>
+        <p class="helper-text">
+          Quên mật khẩu? <a href="#" onclick="forgotPassword()">Khôi phục mật khẩu</a>
+        </p>
+      </div>
+
+      <div class="form register-form hidden">
+        <input type="text" placeholder="Họ tên" required />
+        <div class="gender-group">
+          <label><input type="radio" name="gender" /> Nam</label>
+          <label><input type="radio" name="gender" /> Nữ</label>
+          <label><input type="radio" name="gender" /> Khác</label>
+        </div>
+        <input type="text" placeholder="Ngày sinh (dd/mm/yyyy)" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mật khẩu" required />
+        <p class="captcha-note">
+          This site is protected by reCAPTCHA and the Google <br />
+          Privacy Policy and Terms of Service apply.
+        </p>
+        <button class="signup-submit yellow" onclick="submitRegister()">ĐĂNG KÝ</button>
+      </div>
+    </div>
+  </div>
+  <script src="../Assets/javascript/Signup.js"></script>
+</body>
+</html>

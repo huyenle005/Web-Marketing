@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+   
+  </head>
+  <script src="../Bài tập nhóm/Assets/javascript/Cart.js"></script>
+
+  <body class="cart">
+    <div class="breadcrumbs"> <a href="./homepage.html">Trang chủ</a> <span>/</span> Giỏ hàng </div>
+    </div>
+
+    <div class="cart-container">
+      <div class="cart-left">
+        <div class="cart-section-title">SẢN PHẨM</div>
+
+        <div class="cart-item" data-price="100000">
+          <img src="./Assets/images/fashion1.webp" alt="Quần áo" />
+          <div class="cart-item-info">Quần áo cho chó mèo</div>
+          <div class="cart-item-price">245.000 đ</div>
+          <div class="cart-quantity-control">
+            <button onclick="changeQty(this, -1)">−</button>
+            <span>1</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <div class="cart-item-total">245.000 đ</div>
+          <div class="cart-remove-btn" onclick="removeItem(this)">x</div>
+        </div>
+
+        <div class="cart-item" data-price="390000">
+          <img src="./Assets/images/cage1.jpeg" alt="balo" />
+          <div class="cart-item-info">Thảm mát giải nhiệt cho chó mèo</div>
+          <div class="cart-item-price">195.000 đ</div>
+          <div class="cart-quantity-control">
+            <button onclick="changeQty(this, -1)">−</button>
+            <span>1</span>
+            <button onclick="changeQty(this, 1)">+</button>
+          </div>
+          <div class="cart-item-total">195.000 đ</div>
+          <div class="cart-remove-btn" onclick="removeItem(this)">x</div>
+        </div>
+
+        <div class="cart-note-area">
+          <textarea placeholder="Ghi chú giao hàng"></textarea>
+        </div>
+      </div>
+
+      <div class="cart-right">
+        <h2>TỔNG SỐ TIỀN</h2>
+        <div class="cart-summary">
+          <div class="cart-total-row">
+            <span>Tổng số tiền:</span>
+            <span id="subtotal">490.000 đ</span>
+          </div>
+
+          <label for="voucher">Mã giảm giá</label>
+          <input type="text" id="voucher" placeholder="Nhập mã giảm giá" oninput="applyDiscount(this.value)">
+          <small class="voucher-hint">Ví dụ: PETSTORE20</small>
+
+          <div class="cart-total-row">
+            <span>Tổng:</span>
+            <span id="grandtotal">490.000 đ</span>
+          </div>
+            <div class="cart-button-group">
+              <button class="btn btn-yellow">THANH TOÁN</button>
+              <button class="btn btn-outline">TIẾP TỤC MUA SẮM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
+
+
+

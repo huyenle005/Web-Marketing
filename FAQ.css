@@ -1,0 +1,215 @@
+:root {
+    --primary: #FFF242;
+    --secondary: #5380DF;
+    --accent: #FFE66D;
+    --dark: #292F36;
+    --light: #F7FFF7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('FAQ_Background.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 3rem;        /* Tăng kích thước */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--dark);
+    font-size: 1.3rem;        /* Tăng kích thước */
+    margin-bottom: 2rem;
+}
+
+.faq-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.faq-nav button {
+    background-color: var(--accent);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.faq-nav button:hover {
+    background-color: #FFD700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.faq-nav button.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.faq-nav button i {
+    font-size: 1.1rem;
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    /* padding: 3rem; */
+    padding: 2rem;   /* Giảm padding */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 80%;        /* Thu nhỏ chiều rộng */
+    margin: 2rem auto;    /* Căn giữa */
+}
+
+.faq-section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.faq-section h2 {
+    font-size: 2rem;        /* Tăng kích thước */
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 1.2rem;        /* Tăng kích thước */
+    font-weight: 500;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e9ecef;
+}
+
+.faq-question .icon {
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 1.5rem;
+    transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+    font-size: 1.1rem;        /* Tăng kích thước */
+    line-height: 1.6;
+}
+
+.faq-answer.show {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1rem 1.5rem 1.5rem;
+    background-color: white;
+}
+
+.faq-answer p,
+.faq-answer ul {
+    margin: 0.5rem 0;
+}
+
+.faq-answer ul {
+    padding-left: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .faq-nav {
+        gap: 10px;
+    }
+
+    .faq-nav button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1.5rem;
+        max-width: 95%;   /* Cho mobile full width hơn */
+    }
+
+    .faq-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
